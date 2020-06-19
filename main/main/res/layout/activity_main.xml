@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editDisplayNum"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="1pt"
+        android:layout_marginRight="1pt"
+        android:layout_weight="50"
+        android:background="@color/gray"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:paddingTop="10pt"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        tools:text="0"
+        tools:ignore="RtlHardcoded" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <Button
+                android:id="@+id/buttonAC"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginEnd="1pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/offwhiteback"
+                android:onClick="buClear"
+                android:text="@string/ac"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonPlusMinus"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginEnd="1pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/offwhiteback"
+                android:onClick="buNumberEvent"
+                android:text="@string/PlusMinus"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonMod"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginEnd="1pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/offwhiteback"
+                android:onClick="buPercent"
+                android:text="@string/_Mod"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonDivide"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginEnd="1pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/buop"
+                android:onClick="buOpEvent"
+                android:text="@string/_Divide"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1pt"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginEnd="1pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/offwhiteback"
+                android:onClick="buNumberEvent"
+                android:text="@string/_7"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginEnd="1pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/offwhiteback"
+                android:onClick="buNumberEvent"
+                android:text="@string/_8"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginEnd="1pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/offwhiteback"
+                android:onClick="buNumberEvent"
+                android:text="@string/_9"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonMultiply"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginEnd="1pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/buop"
+                android:onClick="buOpEvent"
+                android:text="@string/_Multiply"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1pt"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginEnd="1pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/offwhiteback"
+                android:onClick="buNumberEvent"
+                android:text="@string/_4"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginEnd="1pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/offwhiteback"
+                android:onClick="buNumberEvent"
+                android:text="@string/_5"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginEnd="1pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/offwhiteback"
+                android:onClick="buNumberEvent"
+                android:text="@string/_6"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonMinus"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginEnd="1pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/buop"
+                android:onClick="buOpEvent"
+                android:text="@string/_Minus"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1pt"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginEnd="1pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/offwhiteback"
+                android:onClick="buNumberEvent"
+                android:text="@string/_1"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginEnd="1pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/offwhiteback"
+                android:onClick="buNumberEvent"
+                android:text="@string/_2"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginEnd="1pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/offwhiteback"
+                android:onClick="buNumberEvent"
+                android:text="@string/_3"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonPlus"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginEnd="1pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/buop"
+                android:onClick="buOpEvent"
+                android:text="@string/_Plus"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button0"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="75pt"
+            android:layout_height="30pt"
+            android:layout_marginEnd="1pt"
+            android:layout_marginRight="1pt"
+            android:layout_weight="1"
+            android:background="@color/offwhiteback"
+            android:onClick="buNumberEvent"
+            android:text="@string/_0"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonDot"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_marginEnd="1pt"
+            android:layout_marginRight="1pt"
+            android:layout_weight="1"
+            android:background="@color/offwhiteback"
+            android:onClick="buNumberEvent"
+            android:text="@string/_Dot"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonEqual"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_marginEnd="1pt"
+            android:layout_marginRight="1pt"
+            android:layout_weight="1"
+            android:background="@color/buop"
+            android:onClick="buEqualEvent"
+            android:text="@string/_Equal"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>
